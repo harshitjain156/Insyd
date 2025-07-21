@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://insyd-h8os.onrender.com/api';
 
 export async function fetchUsers() {
   const response = await fetch(`${API_BASE}/users`);

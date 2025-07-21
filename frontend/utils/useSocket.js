@@ -5,7 +5,7 @@ export function useSocket(selectedUser, setNotifications) {
   const socketRef = useRef();
 
   useEffect(() => {
-    socketRef.current = io('http://localhost:5000');
+    socketRef.current = io('https://insyd-h8os.onrender.com');
 
     socketRef.current.on('connect', () => {
       // Optionally handle connection
