@@ -1,12 +1,19 @@
 import { Pool } from 'pg';
 
 const pool = new Pool({
-  user: 'root',
-  host: 'localhost',
-  database: 'insyd',
-  password: '12345',
-  port: 5432,
+  user: 'postgres',
+  host: 'hopper.proxy.rlwy.net',
+  database: 'railway',
+  password: process.env.DB_KEY,
+  port: 42001,
 });
+// const pool = new Pool({
+//   user: 'root',
+//   host: 'localhost',
+//   database: 'insyd',
+//   password: '12345',
+//   port: 5432,
+// });
 
 async function initDatabase() {
   try {

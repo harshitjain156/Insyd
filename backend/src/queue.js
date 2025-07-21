@@ -3,9 +3,9 @@ import { processEvent } from './notifications.js';
 
 const redis = Redis.createClient({
   username: 'default',
-  password: process.env.REDIS_PASSWORD,
+  password:process.env.REDIS_KEY,
   socket: {
-    host: process.env.REDIS_HOST,
+    host: 'redis-17694.c73.us-east-1-2.ec2.redns.redis-cloud.com',
     port: 17694
   }
 });
